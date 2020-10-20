@@ -15,5 +15,3 @@ Using the script is so easy :
 6. The script will change the window to gw2 and paste the code to the chat several times to simulate a normal user clicks. 
 
 
-# Todo:
-Adding other Killing proof that some parties is requesting. 
