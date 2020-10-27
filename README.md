@@ -1,5 +1,5 @@
 
-![gw2proof](lilogo.png)
+<img align="center" src="lilogo.png">
 
 This is a simple script created to generate Legendary insights (LI) , an item that can be obtained while clearing raids in Gw2, which currently used to proof that your game knowledge is somehow decent in comparison with newbies. 
 
