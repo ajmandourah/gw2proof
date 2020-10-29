@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/spectre.css">
+</head>
+<script>
+    function generate(){
+        e = document.querySelector("#kp")
+        kp = e.options[e.selectedIndex].text
+        amount = document.querySelector('#amount').value
+        f = document.querySelector('#ping')
+        ping = f.options[f.selectedIndex].text
+        
+        window.pywebview.api.generate(kp, amount, ping)
+    }
+
+    function alerting(content){
+        console.log(content)
+        toast = document.querySelector('#error')
+        msg = document.querySelector('#msg')
+        toast.classList.remove("d-none")
+        msg.innerHTML = content
+        setTimeout(function e(){
+            toast.classList.add("d-none")
+        },3000)
+    }
+
+</script>
+<body>
+    <div id="error" class="toast toast-error p-fixed d-none">
+        <p class="text-center" id="msg">123</p>
+    </div>
+
+    <form class="container">
+        <div class="column col-mx-auto text-center">
+            <img src="li.svg" width="30%">
+            </div>
+        <div class="columns ">
+            <b class="column col-5 text-center p-centered my-2">Choose the KP \ LI</b>
+            <select name="" id="kp" class="column col-5 col-mx-auto form-select">
+                <option>Legendary Insight</option>
+                <option>Fractal of the Mist CM</option>
+                <option>W1 Vale Gurdian</option>
+                <option>W1 Gorseval</option>
+                <option>W1 Sabetha</option>
+                <option>W2 Sloth</option>
+                <option>W2 Matthaias</option>
+                <option>W3 KC</option>
+                <option>W3 Xera</option>
+                <option>W4 Carin</option>
+                <option>W4 Murssat</option>
+                <option>W4 Samarog</option>
+                <option>W4 Demios</option>
+                <option>W5 Desmina</option>
+                <option>W5 Statue</option>
+                <option>W5 Dhuum</option>
+                <option>W6 CA</option>
+                <option>W6 Twin</option>
+                <option>W6 Qadim</option>
+                <option>W7 Sabir</option>
+                <option>W7 Adina</option>
+                <option>W7 Quadim</option>
+            </select>
+        </div>
+        <br>
+        <div class="columns">
+            <b class="column col-5 col-mx-auto text-center my-2">Amount</b>
+            <input id="amount" class="column col-5 col-mx-auto form-input" type="number" placeholder="from 1 to 250 !">
+        </div>
+        <br>
+        <div class="columns">
+            <b class="column col-5 col-mx-auto text-center my-2">How many pings</b>
+            <select name="" id="ping" class="column col-5 col-mx-auto form-select">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+        </div>
+    </form>
+    <br>
+    <button onclick="generate()" class="p-centered btn btn-lg btn-primary">Generate</button>
+
+</body>
+</html>
