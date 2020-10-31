@@ -27,6 +27,7 @@ The usage of LI created a lot of toxicity in the game which used not to be so in
 
 # ToDo
 - Adding a funny chat codes.
+- remove the windows warning.
 - you tell me..;)
 
 
