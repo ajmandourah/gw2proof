@@ -7,9 +7,14 @@
 # whats gw2proof
 This is a simple script created to generate Legendary insights (LI) , an item that can be obtained while clearing raids in Gw2, which currently used to proof that your game knowledge is somehow decent in comparison with newbies. 
 
+
 # why you would use it?
 The usage of LI created a lot of toxicity in the game which used not to be so in the old days. That's not to say that proofing LI is not helpful as a knowledgeable party is great in clearing contents in the most effective way but in the end LI is not a marker for that. 
 
+Have cleared the wing and you know the mechanics but because of KP you cannot join any group?
+Have you forgot your proof in the bank and you are too lazy to bring it back?
+
+Now this tool is for you!!
 
 # Usage
 
@@ -22,6 +27,9 @@ The usage of LI created a lot of toxicity in the game which used not to be so in
 5. Write the amount LI / KP needed and click generate. 
 6. The script will change the window to gw2 and paste the code to the chat several times to simulate a normal user clicks. 
 7. enjoy !!!
+
+# Am I gonna be banned for using this?
+The act of copying chatcodes is not prohibited by any means. no one will know that you are using this app unless you say so :)
 
 # latest changlog
 - Added the fractal of the mist CM KP.
