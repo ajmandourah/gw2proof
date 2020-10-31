@@ -11,9 +11,7 @@ The usage of LI created a lot of toxicity in the game which used not to be so in
 
 # Usage
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=P7CnGWXaNO4
-" target="_blank"><img src="http://img.youtube.com/vi/P7CnGWXaNO4/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+[Check the youtube video for demonstration](https://www.youtube.com/watch?v=P7CnGWXaNO4)
 
 1. Download the latest release in the [release section](https://github.com/ajmandourah/gw2proof/releases)
 2. Run the excutable file.
