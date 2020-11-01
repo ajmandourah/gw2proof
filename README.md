@@ -5,7 +5,7 @@
 <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/ajmandourah/gw2proof?style=for-the-badge"> <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/Ajmandourah/Gw2proof/total?style=for-the-badge"> 
 
 # whats gw2proof
-This is a simple script created to generate Legendary insights (LI) , an item that can be obtained while clearing raids in Gw2, which currently used to proof that your game knowledge is somehow decent in comparison with newbies. 
+This is a simple script created to generate Legendary insights (LI) and kill proof (KP) , an item that can be obtained while clearing raids in Gw2, which currently used to proof that your game knowledge is somehow decent in comparison with newbies. 
 
 
 # why you would use it?
