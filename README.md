@@ -7,6 +7,8 @@
 # whats gw2proof
 This is a simple script created to generate Legendary insights (LI) and kill proof (KP) , an item that can be obtained while clearing raids in Gw2, which currently used to proof that your game knowledge is somehow decent in comparison with newbies. 
 
+#### If you want to generate the code without downloading check out [the web version](https://ajmandourah.github.io/gw2proof/)
+
 
 # why you would use it?
 The usage of LI created a lot of toxicity in the game which used not to be so in the old days. That's not to say that proofing LI is not helpful as a knowledgeable party is great in clearing contents in the most effective way but in the end LI is not a marker for that. 
