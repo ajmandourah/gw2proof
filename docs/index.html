@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GW2Proof</title>
 
+    <link rel="stylesheet" href="bulma.css">
+
+
+    <script>
+
+        //defining various killing proof
+        const codes = {
+            "Fractal of the Mist CM" : "4f3f0100",
+            "W1 Vale Gurdian" : "892f0100",
+            "W1 Gorseval" : "b72f0100",
+            "W1 Sabetha" : "a02f0100",
+            "W2 Matthaias" : "6f2f0100",
+            "W2 Sloth" : "8a2f0100",
+            "W3 KC" : "36340100",
+            "W3 Xera" : "5e340100",
+            "W4 Carin" : "ef3a0100",
+            "W4 Murssat" : "8d390100",
+            "W4 Samarog" : "d7380100",
+            "W4 Demios" : "9e3a0100",
+            "W5 Desmina" : "e94f0100",
+            "W5 Statue" : "284f0100",
+            "W5 Dhuum" : "814e0100",
+            "W6 CA" : "df590100",
+            "W6 Twin" : "1c5b0100",
+            "W6 Qadim" : "455a0100",
+            "W7 Sabir" : "86640100",
+            "W7 Adina" : "6e640100",
+            "W7 Quadim" : "27640100",
+            "Legendary Insight" : "f62d0100",
+        }
+
+
+        function HexToChatCode(pStr) {
+        tempstr = '';
+        for (b = 0; b < pStr.length; b = b + 2) {
+            tempstr += String.fromCharCode(parseInt(pStr.substr(b, 2), 16));
+        }
+        return "[&"+ btoa(tempstr) + "]";
+    }
+
+
+
+        function getCode(){
+            selected = document.querySelector("#kp")
+            kp = selected.options[selected.selectedIndex].text
+            for (const [key, value] of Object.entries(codes)){
+                if (kp == key){
+                    var selectedKP = value
+                    
+                }
+            }
+            console.log(selectedKP)
+            amount = document.querySelector('#number').value
+            if ( amount == 0 || amount > 250 || amount == null){
+                error = document.querySelector("#error")
+                error.classList.remove("is-hidden")
+                setTimeout(() => {
+                    error.classList.add("is-hidden")
+                },2000);
+                return
+            }
+            console.log(typeof amount)
+            let x = Number(amount).toString(16)
+            x = x.length < 2? "0" + x : x;
+            let li_hexed = "02"+x+selectedKP
+            let chat_code = HexToChatCode(li_hexed)
+            console.log(chat_code)
+            document.querySelector("#result").innerHTML = chat_code
+        }
+
+        console.log(getCode(20,sabir))
+    </script>
+
+
+</head>
+<body>
+
+
+    <div class="container px-5 mt-6">
+        <div class="columns is-centered">
+            <dic class="column is-half has-text-centered">
+                    <img src="https://github.com/ajmandourah/gw2proof/raw/main/lilogo.png" alt="" style="max-width: 40%;">
+
+                <p class="is-size-4 has-text-weight-medium">Generate your LI/KP now !</p>
+            </dic>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="field">
+                    <label class="label"> Legendary Insight / Kill Proof : </label>
+                    <div class="select is-link is-rounded is-fullwidth">
+                        <select name="" id="kp" >
+                            <option>Legendary Insight</option>
+                            <option>Fractal of the Mist CM</option>
+                            <option>W1 Vale Gurdian</option>
+                            <option>W1 Gorseval</option>
+                            <option>W1 Sabetha</option>
+                            <option>W2 Sloth</option>
+                            <option>W2 Matthaias</option>
+                            <option>W3 KC</option>
+                            <option>W3 Xera</option>
+                            <option>W4 Carin</option>
+                            <option>W4 Murssat</option>
+                            <option>W4 Samarog</option>
+                            <option>W4 Demios</option>
+                            <option>W5 Desmina</option>
+                            <option>W5 Statue</option>
+                            <option>W5 Dhuum</option>
+                            <option>W6 CA</option>
+                            <option>W6 Twin</option>
+                            <option>W6 Qadim</option>
+                            <option>W7 Sabir</option>
+                            <option>W7 Adina</option>
+                            <option>W7 Quadim</option>
+                        </select>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="field">
+                    <label for="" class="label">Quantity</label>
+                    <div class=" is-danger is-fullwidth">
+                        <input type="number" name="" id="number" class="input is-rounded is-link" value="1">
+                    </div>
+                </div>
+                <div class=" mt-5">
+                        <a href="#" onclick="getCode()" class="button is-link is-rounded is-outlined" id="generate">Generate</a>
+                        <div class="is-danger notification is-inline-block py-2 is-light is-hidden" id="error">The quantity must be a number between 1-250.</div>
+                    <label class="label mt-5 is-medium has-text-centered" >Code: <code class="code" id="result"> The code will be generated here</code></label>
+                </div>
+                    
+            </div>    
+
+        </div>
+    </div>
+            <div class="columns">
+                <div class="column">
+                    <p class="is-size-5 has-text-centered">Want to generate your LI\KP and paste it directly to the game multiple times? check the <a href="https://github.com/ajmandourah/gw2proof" class="is-link">github repo now!</a> </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <p class="is-size-7 has-text-centered">A modified version from the original code at <a href="https://jsfiddle.net/bpyxmbax/" class="is-link">jsfiddle.</a> </p>
+                </div>
+            </div>
+    
+
+
+
+
+    </div>
+</body>
+</html>
