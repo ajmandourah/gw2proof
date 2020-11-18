@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GW2Proof</title>
+    <meta name="description" content="A simple legendary insight / killing proof chat generator for raids and strike mission in Guild wars 2">
 
     <link rel="stylesheet" href="bulma.css">
+
+
     <script>
 
         //defining various killing proof
@@ -78,10 +81,10 @@
 
 
 </head>
-<body>
+<body class="has-background-light ">
 
 
-    <div class="container px-5 mt-6">
+    <div class="container px-5 pt-6 ">
         <div class="columns is-centered">
             <dic class="column is-half has-text-centered">
                     <img src="https://github.com/ajmandourah/gw2proof/raw/main/logili.png" alt="" style="max-width: 40%;">
@@ -131,9 +134,9 @@
                         <input type="number" name="" id="number" class="input is-rounded is-link" value="1">
                     </div>
                 </div>
-                <div class=" mt-5">
-                        <a href="#" onclick="getCode()" class="button is-link is-rounded is-outlined" id="generate">Generate</a>
-                        <div class="is-danger notification is-inline-block py-2 is-light is-hidden" id="error">The quantity must be a number between 1-250.</div>
+                <div class=" is-danger notification is-block py-2 is-light is-hidden" id="error">The quantity must be a number between 1-250.</div>
+                <div class=" mt-6">
+                    <a href="#" onclick="getCode()" class="button is-link is-rounded has-text-centered is-block" id="generate">Generate</a>
                     <label class="label mt-5 is-medium has-text-centered" >Code: <code class="code" id="result"> The code will be generated here</code></label>
                 </div>
                     
@@ -151,11 +154,6 @@
                     <p class="is-size-7 has-text-centered">A modified version from the original code at <a href="https://jsfiddle.net/bpyxmbax/" class="is-link">jsfiddle.</a> </p>
                 </div>
             </div>
-    
-
-
-
-
     </div>
 </body>
 </html>
