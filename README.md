@@ -1,5 +1,5 @@
 <p align="center">
-<img src="lilogo.png">
+<img src="logili.png">
 </p>
 
 <img alt="GitHub release (latest SemVer)" src="https://img.shields.io/github/v/release/ajmandourah/gw2proof?style=for-the-badge"> <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/Ajmandourah/Gw2proof/total?style=for-the-badge"> 
